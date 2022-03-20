@@ -1,0 +1,20 @@
+.card__subtitle {
+    padding-bottom: 1rem;
+}
+.landingpage__cards>.card {
+    width: 20rem;
+    height: fit-content;
+}
+
+.landingpage__cards>.card>.card--hover>.card__aside>.card__figure>.card__image {
+    width: 20rem;
+    height: 20rem;
+}
+
+.banner3__container>.card>.card--hover>.card__header {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    padding: 1rem;
+    font-family: var(--secondary-font-family);
+    gap: 0.5rem;
+}

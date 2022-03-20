@@ -1,0 +1,10 @@
+@media only screen and (max-width: 450px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle, .banner2__heading, .banner4__qoute {
+    font-size: 2rem;
+  }
+
+}
