@@ -19,13 +19,13 @@ function Navbar(){
       <nav className="navbar__nav flex--row">
         <ul>
           <li>
-            <a href=""><span className="material-icons" title="View Cart">shopping_cart</span></a>
+            <a href="/"><span className="material-icons" title="View Cart">shopping_cart</span></a>
           </li>
           <li>
-            <a href=""><span className="material-icons" title="View Wishlist">favorite_border</span></a>
+            <a href="/"><span className="material-icons" title="View Wishlist">favorite_border</span></a>
           </li>
           <li>
-            <a href=""><span className="material-icons" title="Account">account_circle</span></a>
+            <a href="/"><span className="material-icons" title="Account">account_circle</span></a>
           </li>
         </ul>
       </nav>
