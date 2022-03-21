@@ -2,7 +2,7 @@ import React from "react";
 import { ProductsSection, TitleBanner, WelcomeBanner, QouteBanner } from "../../components";
 import "./HomeScreen.css"
 
-const HomeScreen=()=> {
+const HomeScreen = () => {
     return (
         <>
             <div className="landingpage__container flex--column">
