@@ -1,5 +1,6 @@
 import React from "react";
 import "./TitleBanner.css";
+import { Link } from "react-router-dom"
 
 function TitleBanner() {
     return (
@@ -11,9 +12,9 @@ function TitleBanner() {
                         A perfect place for all the Astroheads out there.
                     </p>
                     <button className="btn btn-color--tertiary btn-font--secondary">
-                        <a href="/listingpage/listingpage.html">
+                        <Link to="/products">
                             Shop Now
-                        </a>
+                        </Link>
                     </button>
                 </div>
                 <img src="/assets/zodiaclogo.png" alt="" className="banner1__img" />
