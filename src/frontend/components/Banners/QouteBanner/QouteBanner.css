@@ -1,0 +1,26 @@
+.banner4__container {
+    width: 100%;
+    background-color: var(--black-color);
+    position: relative;
+    margin: 2rem 0;
+}
+
+.banner4__container>img {
+    width: 100%;
+    height: 90vh;
+    opacity: 0.2;
+}
+
+.banner4__qoute-wrapper {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white-color);
+    font-family: var(--primary-font-family);
+}
+
+.banner4__qoute {
+    padding-bottom: 3rem;
+}

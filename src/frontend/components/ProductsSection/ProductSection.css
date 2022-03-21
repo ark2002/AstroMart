@@ -1,0 +1,14 @@
+.landingpage__cards {
+    align-content: center;
+    width: 70%;
+    margin: auto auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.banner3__container, .banner5__container {
+    align-items: center;
+    height: fit-content;
+    padding: 3rem 0;
+}

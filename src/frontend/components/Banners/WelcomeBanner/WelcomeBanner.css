@@ -1,0 +1,20 @@
+.banner2__container {
+    background-color: var(--black-color);
+    position: relative;
+    width: 100%;
+}
+
+.banner2__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+    text-shadow: 0 0 7px #fff;
+}
+
+.banner2 {
+    width: 100%;
+    opacity: 0.5;
+}

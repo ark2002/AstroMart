@@ -1,0 +1,36 @@
+.banner1__container {
+    height: 100%;
+    font-family: var(--primary-font-family);
+    background-color: var(--white-color);
+    align-items: center;
+    gap: 0;
+    flex-shrink: 2;
+    justify-items: center;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.banner1__img {
+    width: 30%;
+    margin-right: 10%;
+    margin-left: auto;
+}
+
+.banner1__left {
+    align-items: flex-start;
+    margin-right: auto;
+    margin-left: 10%;
+}
+
+.banner1__left>.btn {
+    color: var(--black-color);
+}
+
+.title {
+    padding: 2rem 0;
+}
+
+.subtitle {
+    font-family: var(--secondary-font-family);
+    padding: 1rem 0;
+}
