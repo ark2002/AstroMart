@@ -18,4 +18,4 @@ const HomeScreen = () => {
     );
 }
 
-export default HomeScreen;
+export { HomeScreen };
