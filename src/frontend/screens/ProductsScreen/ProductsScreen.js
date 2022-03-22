@@ -1,8 +1,12 @@
 import React from "react";
+import {Filter, ProductsList} from "../../components"
 
 function ProductsScreen() {
   return (
-    <div>ProductsScreen</div>
+    <div className="listingpage__container flex--row">
+      <Filter />
+      <ProductsList />
+    </div>
   );
 }
 
