@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import { useProducts } from "../../contexts/products-context";
 import { ListingPageCard } from "../ListingPageCard/ListingPagecard";
 import "./ProductsList.css"
