@@ -1,0 +1,31 @@
+.filter {
+    width: 21%;
+    min-width: 20rem;
+    height: 100%;
+    position: sticky;
+    top: 5rem;
+    left: 0;
+    padding: 3rem;
+    box-shadow: #0000004d 0px 19px 38px, #00000038 0px 15px 12px;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.filter__top {
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category__list {
+    width: 20rem;
+    padding: 1rem;
+}
+
+.rating__label {
+    padding: 1rem;
+}
+
+.filter__slider {
+    width: 20rem;
+}

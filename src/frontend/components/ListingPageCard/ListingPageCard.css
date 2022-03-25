@@ -1,0 +1,41 @@
+.productlist>.card>.card--hover>.card__aside>.card__figure>.card__image {
+    width: 25rem;
+    height: 25rem;
+}
+
+.productlist>.card {
+    box-shadow: none;
+}
+
+.productlist>.card:hover {
+    box-shadow: 0.1rem 0.1rem 1rem -0.5rem var(--black-color);
+}
+
+.card__wishlist {
+    color: var(--primary-color);
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.card__rating{
+    vertical-align: middle;
+    color:var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 5px 5px 2px;
+    width: fit-content;
+    margin-bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card__star{
+    font-size: 1.3rem;
+    padding:2px;
+}
+
+.card__txtbtn {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}

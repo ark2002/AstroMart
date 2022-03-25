@@ -1,0 +1,42 @@
+.productlist__container {
+    width: 77%;
+    margin-left: auto;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.productlist {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.productlist__heading {
+    padding: 1rem;
+}
+
+.productlist>.card>.card--hover>.card__aside>.card__figure>.card__image {
+    width: 25rem;
+    height: 25rem;
+}
+
+.productlist>.card {
+    box-shadow: none;
+}
+
+.productlist>.card:hover {
+    box-shadow: 0.1rem 0.1rem 1rem -0.5rem var(--black-color);
+}
+
+.card__wishlist {
+    color: var(--primary-color);
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.card__txtbtn {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}

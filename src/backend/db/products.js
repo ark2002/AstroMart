@@ -13,7 +13,8 @@ export const products = [
     categoryName: "Spiritual",
     newArrival: true,
     inStock: 10,
-    imageUrl: "assets/product1_img.jpeg"
+    imageUrl: "assets/product1_img.jpeg",
+    rating:3.5
   },
   {
     _id: uuid(),
@@ -22,7 +23,8 @@ export const products = [
     categoryName: "Spiritual",
     newArrival: false,
     inStock: 7,
-    imageUrl: "/assets/product2_img.jpeg"
+    imageUrl: "/assets/product2_img.jpeg",
+    rating:4
   },
   {
     _id: uuid(),
@@ -31,7 +33,8 @@ export const products = [
     categoryName: "Spiritual",
     newArrival: false,
     inStock: 8,
-    imageUrl: "/assets/product3_img.jpeg"
+    imageUrl: "/assets/product3_img.jpeg",
+    rating:5
   },
   {
     _id: uuid(),
@@ -40,7 +43,8 @@ export const products = [
     categoryName: "Clothing",
     newArrival: false,
     inStock: 1,
-    imageUrl: "/assets/product4_img.jpeg"
+    imageUrl: "/assets/product4_img.jpeg",
+    rating: 4.2
   },
   {
     _id: uuid(),
@@ -49,25 +53,28 @@ export const products = [
     categoryName: "Accessories",
     newArrival: true,
     inStock: 10,
-    imageUrl: "/assets/product5_img.jpg"
+    imageUrl: "/assets/product5_img.jpg",
+    rating:2.5
   },
   {
     _id: uuid(),
     title: "Zodiac Rings",
     price: 1200,
-    categoryName: "Accessories",
+    categoryName: "Jewellery",
     newArrival: false,
     inStock: 3,
-    imageUrl: "/assets/product6_img.jpg"
+    imageUrl: "/assets/product6_img.jpg",
+    rating:5
   },
   {
     _id: uuid(),
     title: "Zodiac Pendant",
     price: 500,
-    categoryName: "Accessories",
+    categoryName: "Jewellery",
     newArrival: false,
     inStock: 10,
-    imageUrl: "/assets/product7_img.jpg"
+    imageUrl: "/assets/product7_img.jpg",
+    rating :3.8
   },
   {
     _id: uuid(),
@@ -76,7 +83,8 @@ export const products = [
     categoryName: "Accessories",
     newArrival: false,
     inStock: 9,
-    imageUrl: "/assets/product8_img.jpg"
+    imageUrl: "/assets/product8_img.jpg",
+    rating:4
   },
   {
     _id: uuid(),
@@ -85,7 +93,8 @@ export const products = [
     categoryName: "Clothing",
     newArrival: false,
     inStock: 5,
-    imageUrl: "/assets/product9_img.jpg"
+    imageUrl: "/assets/product9_img.jpg",
+    rating:3.9
   },
   {
     _id: uuid(),
@@ -94,7 +103,8 @@ export const products = [
     categoryName: "Spiritual",
     newArrival: false,
     inStock: 10,
-    imageUrl: "/assets/product10_img.jpg"
+    imageUrl: "/assets/product10_img.jpg",
+    rating:2.2
   },
   {
     _id: uuid(),
@@ -103,7 +113,8 @@ export const products = [
     categoryName: "Spiritual",
     newArrival: true,
     inStock: 3,
-    imageUrl: "/assets/product11_img.jpeg"
+    imageUrl: "/assets/product11_img.jpeg",
+    rating:5
   },
   {
     _id: uuid(),
@@ -112,6 +123,7 @@ export const products = [
     categoryName: "Spiritual",
     newArrival: false,
     inStock: 9,
-    imageUrl: "/assets/product12_img.png"
+    imageUrl: "/assets/product12_img.png",
+    rating:3
   },
 ];
