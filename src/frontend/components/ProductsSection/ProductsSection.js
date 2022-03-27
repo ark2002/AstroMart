@@ -1,5 +1,5 @@
 import React from "react";
-import { useProducts } from "../../contexts/products-context";
+import { useProducts } from "../../contexts";
 import { LandingPageCard } from "../LandingPageCard/LandingPageCard";
 import { Link } from "react-router-dom";
 import "./ProductsSection.css"
