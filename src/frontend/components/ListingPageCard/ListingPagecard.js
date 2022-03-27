@@ -1,8 +1,9 @@
 import React from "react";
+
 import "./ListingPageCard.css";
 
 const ListingPageCard = ({ product }) => {
-    const { title, price, newArrival, inStock, imageUrl , rating } = product;
+    const { title, price, newArrival, inStock, imageUrl, rating } = product;
     return (
         <>
             <div className="card flex--column">

@@ -1,6 +1,7 @@
 import React from "react";
-import "./TitleBanner.css";
 import { Link } from "react-router-dom"
+
+import "./TitleBanner.css";
 
 function TitleBanner() {
     return (

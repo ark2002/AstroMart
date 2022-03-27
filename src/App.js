@@ -1,12 +1,13 @@
 import "./App.css";
-import {Navbar , Footer} from"./frontend/components"
+
+import { Navbar, Footer } from "./frontend/components"
 import { Router } from "./frontend/routing/router";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Router/>
+      <Navbar />
+      <Router />
       <Footer />
     </div>
   );
