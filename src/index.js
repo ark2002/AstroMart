@@ -3,9 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
-import { ProductsProvider } from "./frontend/contexts/products-context";
+import { ProductsProvider, FilterProvider, AuthProvider } from "./frontend/contexts";
 import { BrowserRouter } from "react-router-dom";
-import { FilterProvider } from "./frontend/contexts/filter-context";
 
 // Call make Server
 makeServer();
@@ -13,11 +12,13 @@ makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ProductsProvider>
-        <FilterProvider>
-          <App />
-        </FilterProvider>
-      </ProductsProvider>
+      <AuthProvider>
+        <ProductsProvider>
+          <FilterProvider>
+            <App />
+          </FilterProvider>
+        </ProductsProvider>
+      </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
