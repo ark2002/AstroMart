@@ -1,9 +1,18 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+import { useAuth, UseWishlist } from "../../contexts"
+
 import "./ListingPageCard.css";
 
 const ListingPageCard = ({ product }) => {
-    const { title, price, newArrival, inStock, imageUrl, rating } = product;
+    const { _id, title, price, newArrival, inStock, imageUrl, rating } = product;
+
+    const navigate = useNavigate();
+
+    const { auth } = useAuth();
+    const { wishlist, moveProductToWishlist, removeProductFromWishlist } = UseWishlist();
+
     return (
         <>
             <div className="card flex--column">
@@ -11,7 +20,11 @@ const ListingPageCard = ({ product }) => {
                     <div className="card__aside">
                         <div className="card__figure">
                             <img src={imageUrl} alt={title} className="card__image" />
-                            <span className="material-icons card__wishlist">favorite_border</span>
+                            {wishlist.find((product) => product._id === _id) ?
+                                (<span className="material-icons card__wishlist" title="Remove from Wishlist" onClick={() => removeProductFromWishlist(product._id)}>favorite</span>) :
+                                (<span className="material-icons card__wishlist" title="Add to Wishlist" onClick={() => {
+                                    (auth.status) ? moveProductToWishlist(product) : navigate("/signin");
+                                }}>favorite_border</span>)}
                             {newArrival && <span className="card__badge">new!!</span>}
                             {(inStock < 4) && <span className="card__badge">Few left!</span>}
                         </div>
