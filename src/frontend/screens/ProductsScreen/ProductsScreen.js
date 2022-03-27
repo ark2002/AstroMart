@@ -1,7 +1,6 @@
 import React from "react";
 import { Filter, ProductsList } from "../../components"
-import { useFilters } from "../../contexts/filter-context";
-import { useProducts } from "../../contexts/products-context";
+import { useFilters, useProducts } from "../../contexts";
 import { ProductFilterCategory, ProductFilterRated, ProductsMaxPrice, ProductsSorted } from "../../utlis";
 
 function ProductsScreen() {
@@ -11,8 +10,7 @@ function ProductsScreen() {
   const sortedProducts = ProductsSorted(products, sortBy);
   const categorizedProducts = ProductFilterCategory(sortedProducts, categories);
   const ratedProducts = ProductFilterRated(categorizedProducts, rating);
-  const rangedProducts = ProductsMaxPrice(ratedProducts, maxPrice)
-  console.log("max price :" + maxPrice);
+  const rangedProducts = ProductsMaxPrice(ratedProducts, maxPrice);
 
 
   return (
