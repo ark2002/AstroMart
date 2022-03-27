@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { useProducts } from "../../contexts";
 import { LandingPageCard } from "../LandingPageCard/LandingPageCard";
-import { Link } from "react-router-dom";
+
 import "./ProductsSection.css"
 
 function ProductsSection({ title }) {

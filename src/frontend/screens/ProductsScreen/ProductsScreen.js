@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Filter, ProductsList } from "../../components"
 import { useFilters, useProducts } from "../../contexts";
 import { ProductFilterCategory, ProductFilterRated, ProductsMaxPrice, ProductsSorted } from "../../utlis";

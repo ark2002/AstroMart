@@ -1,9 +1,8 @@
 import React from "react";
+
 import { ListingPageCard } from "../ListingPageCard/ListingPagecard";
+
 import "./ProductsList.css"
-
-
-
 
 const ProductsList = ({ ratedProducts }) => {
 

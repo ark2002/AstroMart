@@ -1,7 +1,9 @@
 import React from "react";
+
 import "./LandingPageCard.css"
+
 function LandingPageCard({ product }) {
-    const { title, price, newArrival, inStock , imageUrl } = product;
+    const { title, price, newArrival, inStock, imageUrl } = product;
     return (
         <>
             <div className="card flex--column">

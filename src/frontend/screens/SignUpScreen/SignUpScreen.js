@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./SignUpScreen.css";
 import { Link, useNavigate } from "react-router-dom";
+
 import { useAuth } from "../../contexts";
 import { signUpService } from "../../services"
 
+import "./SignUpScreen.css";
 
 function SignUpScreen() {
     const [user, setUser] = useState({
@@ -34,7 +35,7 @@ function SignUpScreen() {
         <div className="signup__container flex--column">
             <form className="signup__form flex--column" onSubmit={(e) => {
                 e.preventDefault();
-                signUpHandler(user, setAuth, navigate);
+                signUpHandler(user);
             }}>
                 <h1 className="signup__header heading2 title primary__font">Sign-Up</h1>
                 <input type="text" placeholder="First Name" className="input__txt username secondary__font" required value={user.firstName} onChange={(e) => setUser({ ...user, firstName: e.target.value })} />

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import "./SignInScreen.css";
 import { Link, useNavigate } from "react-router-dom";
+
 import { useAuth } from "../../contexts";
-import { signInService } from "../../services"
+import { signInService } from "../../services";
+
+import "./SignInScreen.css";
 
 function SignInScreen() {
     const [user, setUser] = useState({
@@ -32,7 +34,7 @@ function SignInScreen() {
         <div className="login__container flex--column">
             <form className=" login__form flex--column" onSubmit={(e) => {
                 e.preventDefault();
-                signInHandler(user, setAuth, navigate);
+                signInHandler(user);
             }}
             >
                 <h1 className="login__header heading2 title primary__font">Sign-In</h1>

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./Navbar.css"
+
 import { useAuth } from "../../contexts";
 
+import "./Navbar.css"
 
 function Navbar() {
   const [accountList, setAccountList] = useState(false);
@@ -50,7 +51,7 @@ function Navbar() {
         <NavLink to="/signin"><li>Sign-In</li></NavLink>
         <NavLink to="/signup"><li>Sign-Up</li></NavLink>
       </div> : <div className="dropdown-list secondary__font text__small">
-        <NavLink to="/signin"><li onClick={() => signOutHandler(setAuth)}>Log-Out</li></NavLink>
+        <NavLink to="/"><li onClick={() => signOutHandler(setAuth)}>Log-Out</li></NavLink>
       </div>)}
     </>
   );
