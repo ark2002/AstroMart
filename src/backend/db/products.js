@@ -14,7 +14,8 @@ export const products = [
     newArrival: true,
     inStock: 10,
     imageUrl: "assets/product1_img.jpeg",
-    rating:3.5
+    description: "Amethyst is one of the most effective crystalsfor healing people, plants that won’t grow, and calming animals.",
+    rating: 3.5
   },
   {
     _id: uuid(),
@@ -24,7 +25,8 @@ export const products = [
     newArrival: false,
     inStock: 7,
     imageUrl: "/assets/product2_img.jpeg",
-    rating:4
+    description: "Obsidian is formed when volcanic lava comes into contact with water; this forces it to cool so quickly.",
+    rating: 4
   },
   {
     _id: uuid(),
@@ -34,7 +36,8 @@ export const products = [
     newArrival: false,
     inStock: 8,
     imageUrl: "/assets/product3_img.jpeg",
-    rating:5
+    description: "Lapis Lazuli helps disconnect the conscious and subconscious mind and boosts intuition. Lapis lazuli is also a very protective stone.",
+    rating: 5
   },
   {
     _id: uuid(),
@@ -44,6 +47,7 @@ export const products = [
     newArrival: false,
     inStock: 1,
     imageUrl: "/assets/product4_img.jpeg",
+    description: "A Black hoddie made out of the best quality cotton to provide you with supreme comfort with the a Sun And the moon design printed on the back.",
     rating: 4.2
   },
   {
@@ -54,7 +58,8 @@ export const products = [
     newArrival: true,
     inStock: 10,
     imageUrl: "/assets/product5_img.jpg",
-    rating:2.5
+    description: "Get a fully costumized Keychain based on Your zodiac sign in premium quality metal. U can rock these on your keys , purses or even your bags.",
+    rating: 2.5
   },
   {
     _id: uuid(),
@@ -64,7 +69,8 @@ export const products = [
     newArrival: false,
     inStock: 3,
     imageUrl: "/assets/product6_img.jpg",
-    rating:5
+    description: "Your star sign has a strong influence on your personality, character, and emotions. This ring is an elegant reminder of your star sign and its potent meaning.",
+    rating: 5
   },
   {
     _id: uuid(),
@@ -74,7 +80,8 @@ export const products = [
     newArrival: false,
     inStock: 10,
     imageUrl: "/assets/product7_img.jpg",
-    rating :3.8
+    description: "Gorgeous Zodiac and birthstone pendant, a great gift for your friends or yourself! Costumize it according to your signs !",
+    rating: 3.8
   },
   {
     _id: uuid(),
@@ -84,7 +91,8 @@ export const products = [
     newArrival: false,
     inStock: 9,
     imageUrl: "/assets/product8_img.jpg",
-    rating:4
+    description: "This keepsake box is a marvelous gift! Personalized engraving makes your box unique and perfect for any occasion. It the perfect way to store all the little things in one place.",
+    rating: 4
   },
   {
     _id: uuid(),
@@ -94,7 +102,8 @@ export const products = [
     newArrival: false,
     inStock: 5,
     imageUrl: "/assets/product9_img.jpg",
-    rating:3.9
+    description: "Hand screen printed on a Next Level t shirt. Made with 100% combed and ring-spun cotton. The shirts are very lightweight and extremely soft.",
+    rating: 3.9
   },
   {
     _id: uuid(),
@@ -104,7 +113,8 @@ export const products = [
     newArrival: false,
     inStock: 10,
     imageUrl: "/assets/product10_img.jpg",
-    rating:2.2
+    description: "Fluorite is a highly protective and stabilizing stone, useful for grounding and harmonizing spiritual energy.  When working with the upper Chakras.",
+    rating: 2.2
   },
   {
     _id: uuid(),
@@ -114,7 +124,8 @@ export const products = [
     newArrival: true,
     inStock: 3,
     imageUrl: "/assets/product11_img.jpeg",
-    rating:5
+    description: "Quartz is the most versatile and powerful healing stone in the mineral kingdom. It can open, balance, and energize all the chakras, especially the crown.",
+    rating: 5
   },
   {
     _id: uuid(),
@@ -124,6 +135,7 @@ export const products = [
     newArrival: false,
     inStock: 9,
     imageUrl: "/assets/product12_img.png",
-    rating:3
+    description: "Quartz is the most versatile and powerful healing stone in the mineral kingdom. It can open, balance, and energize all the chakras, especially the crown.",
+    rating: 3
   },
 ];

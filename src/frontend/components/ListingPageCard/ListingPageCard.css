@@ -19,9 +19,9 @@
     top: 0;
 }
 
-.card__rating{
+.card__rating {
     vertical-align: middle;
-    color:var(--white-color);
+    color: var(--white-color);
     background-color: var(--primary-color);
     border-radius: 5px;
     padding: 5px 5px 5px 2px;
@@ -30,12 +30,16 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.card__star{
+.card__star {
     font-size: 1.3rem;
-    padding:2px;
+    padding: 2px;
 }
 
 .card__txtbtn {
     font-family: var(--secondary-font);
     font-weight: 500;
+}
+
+.card__wishlist:hover {
+    text-shadow: 0px 0px 10px var(--secondary-color);
 }
