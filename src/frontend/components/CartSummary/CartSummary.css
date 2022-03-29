@@ -1,0 +1,35 @@
+.cart__summary {
+    height: fit-content;
+    padding: 2rem 0;
+    gap: 1rem;
+    flex-basis: 25%;
+    align-items: flex-start;
+    box-shadow: #32325d40 0px 6px 12px -2px, #0000004d 0px 3px 7px -3px;
+}
+
+.summary__heading {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #999999;
+}
+
+.price__summary {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.price__summary:nth-child(4) {
+    border-bottom: 1px solid #999999;
+}
+
+.price__summary:nth-child(5) {
+    border-bottom: 1px solid #999999;
+}
+
+.order__btn {
+    align-self: center;
+}

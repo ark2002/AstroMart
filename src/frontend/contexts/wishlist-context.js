@@ -3,7 +3,6 @@ import React, { useState, useEffect, createContext, useContext } from "react";
 import { getWishlistService, moveProductToWishlistService, removeProductFromWishlistService } from "../services";
 import { useAuth } from "./auth-context";
 
-
 const WishlistContext = createContext();
 
 const WishlistProvider = ({ children }) => {
@@ -46,6 +45,6 @@ const WishlistProvider = ({ children }) => {
     );
 }
 
-const UseWishlist = () => useContext(WishlistContext);
+const useWishlist = () => useContext(WishlistContext);
 
-export { WishlistProvider, UseWishlist };
+export { WishlistProvider, useWishlist };

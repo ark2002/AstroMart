@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { useAuth } from "../../contexts";
+import { useAuth, useCart } from "../../contexts";
 
 import "./Navbar.css"
 
 function Navbar() {
   const [accountList, setAccountList] = useState(false);
   const { auth, setAuth } = useAuth();
+  const { cartSummary: { cartTotalProducts } } = useCart();
 
   const signOutHandler = (setAuth) => {
     localStorage.removeItem("AUTH_TOKEN");
@@ -36,7 +37,10 @@ function Navbar() {
         <nav className="navbar__nav flex--row">
           <ul>
             <li>
-              <NavLink to="/cart"><span className="material-icons" title="View Cart">shopping_cart</span></NavLink>
+              <NavLink to="/cart">
+                <span className="material-icons" title="View Cart">shopping_cart</span>
+                {cartTotalProducts !== 0 && <span className="cart__badge badge--position badge">{cartTotalProducts}</span>}
+              </NavLink>
             </li>
             <li>
               <NavLink to="/wishlist"><span className="material-icons" title="View Wishlist">favorite_border</span></NavLink>

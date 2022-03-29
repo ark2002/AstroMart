@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
-import { useAuth, UseWishlist } from "../../contexts"
+import { useAuth, useCart, useWishlist } from "../../contexts"
 
 import "./ListingPageCard.css";
 
@@ -11,7 +11,9 @@ const ListingPageCard = ({ product }) => {
     const navigate = useNavigate();
 
     const { auth } = useAuth();
-    const { wishlist, moveProductToWishlist, removeProductFromWishlist } = UseWishlist();
+    const { wishlist, moveProductToWishlist, removeProductFromWishlist } = useWishlist();
+    const { cart, addProductToCart } = useCart();
+
 
     return (
         <>
@@ -38,7 +40,8 @@ const ListingPageCard = ({ product }) => {
                 <div className="card__footer">
                     <div className="card__actions flex--row">
                         <button className="card__txtbtn">Buy Now</button>
-                        <button className="card__txtbtn">Add to Cart</button>
+                        {cart.find((cartProduct) => cartProduct._id === _id) ? (<button className="card__txtbtn" onClick={() => navigate("/cart")}>Go to Cart</button>) :
+                            (<button className="card__txtbtn" onClick={() => auth.status ? addProductToCart(product) : navigate("/signin")}>Add to Cart</button>)}
                     </div>
                 </div>
             </div>

@@ -1,0 +1,17 @@
+.cart__container {
+    align-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+    gap: 5%;
+    margin: auto;
+}
+
+.cart__item-container {
+    align-items: center;
+    gap: 1rem;
+    flex-basis: 70%;
+}
+
+.cart__heading {
+    flex-basis: 100%;
+}
