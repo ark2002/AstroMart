@@ -9,7 +9,7 @@ export const removeProductFromCartService = async (token, id) => {
     });
     return data.cart;
   } catch (error) {
-    console.error(error.message);
+    console.error(error);
     return;
   }
 };

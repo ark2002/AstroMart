@@ -9,7 +9,7 @@ export const removeProductFromWishlistService = async (token, id) => {
         });
         return data.wishlist;
     } catch (error) {
-        console.error(error.message);
+        console.error(error);
         return;
     }
 };

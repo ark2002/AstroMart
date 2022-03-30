@@ -17,7 +17,7 @@ export const updateQuantityOfProductInCartService = async (token, id, type) => {
     );
     return data.cart;
   } catch (error) {
-    console.error(error.message);
+    console.error(error);
     return;
   }
 };

@@ -13,7 +13,7 @@ export const addProductToCartService = async (token, product) => {
     );
     return data.cart;
   } catch (error) {
-    console.error(error.message);
+    console.error(error);
     return;
   }
 };
