@@ -1,16 +1,16 @@
 import React from "react";
 
 import { WishListCard } from "../../components";
-import { UseWishlist } from "../../contexts";
+import { useWishlist } from "../../contexts";
 
 import "./WishlistScreen.css"
 
 function WishlistScreen() {
-    const { wishlist } = UseWishlist();
+    const { wishlist } = useWishlist();
     return (
         <>
-            <div class="wishlist__container flex--column">
-                <h1 class="wishlist__heading primary__font heading2">WishList</h1>
+            <div className="wishlist__container flex--column">
+                <h1 className="wishlist__heading primary__font heading2">WishList</h1>
                 {wishlist.map((product) => (<WishListCard key={product._id} product={product} />))}
             </div>
         </>

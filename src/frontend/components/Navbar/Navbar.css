@@ -6,3 +6,11 @@
     right: 0;
     z-index: 2;
 }
+
+.cart__badge.badge--position.badge {
+    padding: 0.3rem 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--primary-color);
+}
