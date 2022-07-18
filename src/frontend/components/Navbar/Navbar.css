@@ -14,3 +14,7 @@
     vertical-align: middle;
     background-color: var(--primary-color);
 }
+
+li:hover>.dropdown-list {
+    font-weight: 400;
+}
