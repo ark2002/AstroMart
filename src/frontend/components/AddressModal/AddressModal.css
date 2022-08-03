@@ -1,0 +1,50 @@
+.AddressModal {
+    padding: 1.5rem;
+    width: 40rem;
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.address-modal__dual {
+    gap: 1rem;
+}
+
+.input__label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.input__large {
+    font-size: 1.7rem;
+    border-radius: 5px;
+    width: 97%;
+    padding: 5px;
+    margin: 5px 0;
+    outline: none;
+    border: 1px solid var(--black-color);
+    background-color: transparent;
+    color: var(--black-color);
+}
+
+.input__small {
+    font-size: 1.7rem;
+    border-radius: 5px;
+    width: 94%;
+    padding: 5px;
+    margin: 5px 0;
+    outline: none;
+    border: 1px solid var(--black-color);
+    background-color: transparent;
+    color: var(--black-color);
+}
+
+.address-modal__buttons {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.address-modal__buttons>button {
+    width: 20%;
+}

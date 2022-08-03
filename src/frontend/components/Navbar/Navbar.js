@@ -38,7 +38,7 @@ function Navbar() {
             <h2 className="header__logo">AstroMart</h2>
           </div>
         </NavLink>
-        <div className="navbar__search-container flex--row">
+        {/* <div className="navbar__search-container flex--row">
           <input
             type="text"
             className="navbar__search input__txt"
@@ -47,7 +47,7 @@ function Navbar() {
           <button className="navbar__search-btn btn">
             <span className="material-icons search__btn-icon">search</span>
           </button>
-        </div>
+        </div> */}
         <nav className="navbar__nav flex--row">
           <ul>
             <li>

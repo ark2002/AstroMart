@@ -1,3 +1,8 @@
 /* Astro Ui Main Css */
 @import url("https://astro-ui.netlify.app/main.css");
 /* Astro Ui Main Css */
+
+.toast__style {
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+}

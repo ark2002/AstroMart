@@ -1,0 +1,29 @@
+.address__item {
+    min-width: 16rem;
+    max-width: 20rem;
+    font-size: 1.4rem;
+    padding: 1rem;
+    gap: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+}
+
+.address__name {
+    width: 15rem;
+}
+
+.address__details {
+    flex-wrap: wrap;
+    gap: 5px
+}
+
+.AddressModal__container {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 115%;
+    background-color: #ffffff69;
+    align-items: center;
+    justify-content: center;
+}

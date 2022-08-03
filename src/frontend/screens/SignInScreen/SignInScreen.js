@@ -55,8 +55,8 @@ function SignInScreen() {
                         e.preventDefault();
                         signInHandler(
                             {
-                                email: "adarshbalika@gmail.com",
-                                password: "adarshbalika",
+                                email: "aryaklahane@gmail.com",
+                                password: "aryaklahane",
                             },
 
                         );
