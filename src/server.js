@@ -8,6 +8,7 @@ import {
   getCartItemsHandler,
   removeItemFromCartHandler,
   updateCartItemHandler,
+  clearCartHandler,
 } from "./backend/controllers/CartController";
 import {
   getAllCategoriesHandler,
@@ -22,6 +23,12 @@ import {
   getWishlistItemsHandler,
   removeItemFromWishlistHandler,
 } from "./backend/controllers/WishlistController";
+import {
+  addAddressHandler,
+  editAddressHandler,
+  getAddressHandler,
+  removeAddressHandler,
+} from "./backend/controllers/UserController";
 import { categories } from "./backend/db/categories";
 import { products } from "./backend/db/products";
 import { users } from "./backend/db/users";
@@ -77,13 +84,24 @@ export function makeServer({ environment = "development" } = {}) {
         "/user/cart/:productId",
         removeItemFromCartHandler.bind(this)
       );
-
+      this.post("/user/cart/clearCart", clearCartHandler.bind(this));
       // wishlist routes (private)
       this.get("/user/wishlist", getWishlistItemsHandler.bind(this));
       this.post("/user/wishlist", addItemToWishlistHandler.bind(this));
       this.delete(
         "/user/wishlist/:productId",
         removeItemFromWishlistHandler.bind(this)
+      );
+      // user routes (private)
+      this.get("/users/address", getAddressHandler.bind(this));
+      this.post("/users/address/add", addAddressHandler.bind(this));
+      this.post(
+        "/users/remove-address/:addressId/",
+        removeAddressHandler.bind(this)
+      );
+      this.post(
+        "/users/edit-address/:addressId/",
+        editAddressHandler.bind(this)
       );
     },
   });
