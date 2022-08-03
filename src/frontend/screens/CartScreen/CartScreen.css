@@ -2,6 +2,7 @@
     align-content: center;
     flex-wrap: wrap;
     width: 95%;
+    min-height: 70vh;
     gap: 5%;
     margin: auto;
 }
@@ -14,4 +15,9 @@
 
 .cart__heading {
     flex-basis: 100%;
+}
+
+.empty__title{
+    padding:2rem;
+    text-align: center;
 }
