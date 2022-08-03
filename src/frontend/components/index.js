@@ -1,11 +1,13 @@
-export { Navbar } from "./Navbar/Navbar"
-export { Footer } from "./Footer/Footer"
-export { LandingPageCard } from "./LandingPageCard/LandingPageCard"
-export { ProductsSection } from "./ProductsSection/ProductsSection"
-export { ProductsList } from "./ProductsList/ProductsList"
-export { Filter } from "./Filter/Filter"
-export { TitleBanner, WelcomeBanner, QouteBanner } from "./Banners"
-export { PrivateRoute } from "./PrivateRoute/PrivateRoute"
-export { WishListCard } from "./WishListCard/WishListCard"
-export { CartPageCard } from "./CartPageCard/CartPageCard"
-export { CartSummary } from "./CartSummary/CartSummary"
+export { Navbar } from "./Navbar/Navbar";
+export { Footer } from "./Footer/Footer";
+export { LandingPageCard } from "./LandingPageCard/LandingPageCard";
+export { ProductsSection } from "./ProductsSection/ProductsSection";
+export { ProductsList } from "./ProductsList/ProductsList";
+export { Filter } from "./Filter/Filter";
+export { TitleBanner, WelcomeBanner, QouteBanner } from "./Banners";
+export { PrivateRoute } from "./PrivateRoute/PrivateRoute";
+export { WishListCard } from "./WishListCard/WishListCard";
+export { CartPageCard } from "./CartPageCard/CartPageCard";
+export { CartSummary } from "./CartSummary/CartSummary";
+export { AddressCard } from "./AddressCard/AddressCard";
+export { OrderSummary } from "./OrderSummary/OrderSummary";
