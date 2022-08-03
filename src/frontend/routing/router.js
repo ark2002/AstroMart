@@ -6,7 +6,9 @@ import { useAuth } from "../contexts";
 import { ScrollToTop } from "../hooks/ScrollToTop";
 import {
   CartScreen,
+  CheckOutScreen,
   HomeScreen,
+  OrderSummaryScreen,
   ProductsScreen,
   SignInScreen,
   SignUpScreen,
@@ -35,6 +37,22 @@ const Router = () => {
           element={
             <PrivateRoute>
               <WishlistScreen />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/checkout"
+          element={
+            <PrivateRoute>
+              <CheckOutScreen />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/ordersummary"
+          element={
+            <PrivateRoute>
+              <OrderSummaryScreen />
             </PrivateRoute>
           }
         />
